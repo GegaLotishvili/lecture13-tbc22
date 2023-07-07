@@ -1,0 +1,13 @@
+@mixin mycontainer {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@mixin goflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}

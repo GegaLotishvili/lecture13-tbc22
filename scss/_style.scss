@@ -1,0 +1,47 @@
+header {
+    height: 80px;
+    background-color: $mycolor1;
+    .container {
+        border: 2px solid black;
+        @include mycontainer;
+        height: 100%;
+        @include goflex;
+        .logo {
+            font-size: 60px;
+            color: hotpink;
+        }
+        nav {
+            width: 500px;
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a {
+                    font-size: 28px;
+                    color: rgb(2, 2, 70);
+                }
+            }
+        }
+    }
+}
+
+.s-1 {
+    background-color: $mycolor1;
+    .container {
+        @include mycontainer;
+        border: 2px solid red;
+        .bigbox {
+            background-color: chocolate;
+            height: 700px;
+            width: 100%;
+            @include goflex;
+            .smallbox {
+                width: 200px;
+                height: 200px;
+                border: 4px solid black;
+                background-color: $mycolor1;
+            }
+        }
+    }
+}
